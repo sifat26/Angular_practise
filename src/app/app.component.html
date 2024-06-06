@@ -1,8 +1,18 @@
-<div >
+<!-- <div>
   @for (blogPost of blogPosts; track $index) {
-    <h3>{{ blogPost.title }}</h3>
+  <h3>{{ blogPost.title }}</h3>
   <p>{{ blogPost.description }}</p>
   <p>{{ blogPost.author.name }}</p>
   }
-  
+</div> -->
+
+<div>
+  <div *ngFor="let blogPost of blogPosts; let i = index">
+    <h3>{{ blogPost.title }}</h3>
+    <p>{{ blogPost.description }}</p>
+    <p>{{ blogPost.author.name }}</p>
+  </div>
 </div>
+<input [(ngModel)]="email" type="email">
+<button (click)="onSave()">Save</button>
+<p>{{email}}</p>

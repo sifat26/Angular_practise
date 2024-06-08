@@ -1,3 +1,4 @@
+       ##Angular Interface##
 In Angular, an interface is a way to define the shape of an object. It specifies what properties and methods an object should have, without providing the implementation. Interfaces are used for type-checking during development, ensuring that the objects used in the application conform to a specific structure.
 
 Here's a simple explanation and example to illustrate the concept:
